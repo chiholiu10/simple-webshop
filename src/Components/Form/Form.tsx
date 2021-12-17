@@ -8,7 +8,7 @@ export const Form: FC = () => {
     message: ""
   });
 
-  const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
+  const send Email = async (e: FormEvent<HTMLFormElement>) => {
     const requestOption = {
       method: "POST",
       headers: {
