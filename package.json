@@ -34,18 +34,19 @@
     "eject": "react-scripts eject",
     "prepare": "husky install .config/husky"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run build && git add .",
-      "pre-push": ""
-    }
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
